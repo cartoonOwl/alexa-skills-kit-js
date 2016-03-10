@@ -21,246 +21,143 @@
  */
 var questions = [
     {
-        "Reindeer have very thick coats, how many hairs per square inch do they have?": [
-            "13,000",
-            "1,200",
-            "5,000",
-            "700",
-            "1,000",
-            "120,000"
+        "Can gorillas catch human colds?": [
+            "Yes they can",
+            "Only if they make out with a human",
+            "No they can't",
+            "They think they can, but they can't"
         ]
     },
     {
-        "The 1964 classic Rudolph The Red Nosed Reindeer was filmed in:": [
-            "Japan",
-            "United States",
-            "Finland",
-            "Germany"
+        "Dogs can see some colors, which colors can they see?": [
+            "Yellow and Blue",
+            "Trick question, dogs can only see black and white",
+            "Red and green",
+            "Only shades of purple"
         ]
     },
     {
-        "Santas reindeer are cared for by one of the Christmas elves, what is his name?": [
-            "Wunorse Openslae",
-            "Alabaster Snowball",
-            "Bushy Evergreen",
-            "Pepper Minstix"
+        "The hippopotamus is suprisingly fast, what is its top running speed?": [
+            "Nineteen miles per hour",
+            "Fifty five miles per hour",
+            "Ten miles per hour",
+            "Twenty five miles per hour"
         ]
     },
     {
-        "If all of Santas reindeer had antlers while pulling his Christmas sleigh, they would all be:": [
-            "Girls",
-            "Boys",
-            "Girls and boys",
-            "No way to tell"
+        "Which of the following animals has been confirmed to have a spoken language?": [
+            "Prairie Dogs",
+            "Skunks",
+            "Owls",
+            "Tigers"
         ]
     },
     {
-        "What do Reindeer eat?": [
-            "Lichen",
-            "Grasses",
-            "Leaves",
-            "Berries"
+        "Which of the following animals causes the most human deaths per year?": [
+            "Cattle",
+            "Sharks",
+            "Snakes",
+            "Spiders"
         ]
     },
     {
-        "What of the following is not true?": [
-            "Caribou live on all continents",
-            "Both reindeer and Caribou are the same species",
-            "Caribou are bigger than reindeer",
-            "Reindeer live in Scandinavia and Russia"
+        "What are butterfly wings made of?": [
+            "Scales",
+            "Silk",
+            "Magic",
+            "Shellac"
         ]
     },
     {
-        "In what year did Rudolph make his television debut?": [
-            "1964",
-            "1979",
-            "2000",
-            "1956"
+        "Are red pandas herbivores or carnivores?": [
+            "They are technically carnivores, but they are vegetarians and only eat bamboo",
+            "They are omnivores, and they notorious for raiding garbage cans in their native Nepal",
+            "They are herbivores, and only eat bamboo",
+            "They have a terrible fast food habit"
         ]
     },
     {
-        "Who was the voice of Rudolph in the 1964 classic?": [
-            "Billie Mae Richards",
-            "Burl Ives",
-            "Paul Soles",
-            "Lady Gaga"
+        "What color is a polar bear?": [
+            "Black skin, white fur",
+            "White skin, white fur",
+            "White skin, transparent fur",
+            "I don't pay attention to skin color"
         ]
     },
     {
-        "In 1939 what retailer used the story of Rudolph the Red Nose Reindeer?": [
-            "Montgomery Ward",
-            "Sears",
-            "Macys",
-            "Kmart"
+        "Which of the following is not a hybrid of two animals?": [
+            "A Spider Monkey",
+            "A Coy wolf",
+            "A Mule",
+            "A Savannah Cat"
         ]
     },
     {
-        "Santa's reindeer named Donner was originally named what?": [
-            "Dunder",
-            "Donny",
-            "Dweedle",
-            "Dreamy"
+        "Why has biologist Jonathan Kingdon proposed changing the Elephant Shrew's common name to Sengi?": [
+            "It is not a true Shrew. It is more closely related to Elephants than to shrews",
+            "The Elephants threatened to sue for copyright infringement",
+            "It has evolved since it was first discovered and the name no longer fits",
+            "He lost a bet"
         ]
     },
     {
-        "Who invented the story of Rudolph?": [
-            "Robert May",
-            "Johnny Marks",
-            "Santa",
-            "J.K. Rowling"
+        "Do bees see in color?": [
+            "Bees can see a wider spectrum of color than humans do",
+            "Bees only see in black, white, and red",
+            "Bees see the same color spectrum as humans",
+            "Bees color vision is exactly the same as dogs"
+            
         ]
+        
     },
     {
-        "In what location will you not find reindeer?": [
-            "North Pole",
-            "Lapland",
-            "Korvatunturi mountain",
-            "Finland"
+        "The California Condor has made a comeback in recent years and the population is now roughly 425 individuals. How low did their numbers get in the nineteen eighties?": [
+            "Twenty two",
+            "One hundred",
+            "Forty one",
+            "Five"
         ]
+        
     },
     {
-        "What Makes Santa's Reindeer Fly?": [
-            "Magical Reindeer Dust",
-            "Fusion",
-            "Amanita muscaria",
-            "Elves"
-        ]
+        "What animal acts as a race horse's companion in the stable?": [
+            "Goats",
+            "Rabbits",
+            "Interns",
+            "Hamsters"
+            ]
     },
     {
-        "Including Rudolph, how many reindeer hooves are there?": [
-            "36",
-            "24",
-            "16",
-            "8"
-        ]
+        "Island species often face eradication because of their limited range and specialized nature. Which of these island birds is the most endangered?": [
+            "Hawaiian Crow",
+            "Kakapo",
+            "Island Scrub Jay",
+            "Christmas island frigate bird"
+            ]
     },
     {
-        "Santa only has one female reindeer. Which one is it?": [
-            "Vixen",
-            "Clarice",
-            "Cupid",
-            "Cupid"
-        ]
+        "Tardigrades are known for being able to freeze for years and revive in perfect health, but they are not alone. Which of these animals can also freeze and revive?": [
+            "Scorpions",
+            "Hamsters",
+            "Penguins",
+            "Polar Bears",
+            ]
     },
     {
-        "In the 1964 classic Rudolph The Red Nosed Reindeer, what was the snowman narrators name?": [
-            "Sam",
-            "Frosty",
-            "Burl",
-            "Snowy"
-        ]
+        "How many ants can an ant eater eat per day?": [
+            "35,000",
+            "One million",
+            "Ten million",
+            "How many have you got?"
+            ]
     },
     {
-        "What was Rudolph's father's name?": [
-            "Donner",
-            "Dasher",
-            "Blixen",
-            "Comet"
-        ]
-    },
-    {
-        "In the 1964 movie, What was the name of the coach of the Reindeer Games?": [
-            "Comet",
-            "Blixen",
-            "Donner",
-            "Dasher"
-        ]
-    },
-    {
-        "In the 1964 movie, what is the name of the deer that Rudolph befriends at the reindeer games?": [
-            "Fireball",
-            "Clarice",
-            "Jumper",
-            "Vixen"
-        ]
-    },
-    {
-        "In the 1964 movie, How did Donner, Rudolph's father, try to hide Rudolph's nose?": [
-            "Black mud",
-            "Bag",
-            "Pillow case",
-            "Sock"
-        ]
-    },
-    {
-        "In the 1964 movie, what does the Misfit Elf want to be instead of a Santa Elf?": [
-            "Dentist",
-            "Reindeer",
-            "Toy maker",
-            "Candlestick maker"
-        ]
-    },
-    {
-        "In the 1964 movie,what was the Bumble's one weakness?": [
-            "Could not swim",
-            "Always hungry",
-            "Candy canes",
-            "Cross eyed"
-        ]
-    },
-    {
-        "In the 1964 movie, what is Yukon Cornelius really in search of?": [
-            "Peppermint",
-            "Gold",
-            "India",
-            "Polar Bears"
-        ]
-    },
-    {
-        "In the 1964 movie, why is the train on the Island of Misfit Toys?": [
-            "Square wheels",
-            "No Engine",
-            "Paint does not match",
-            "It does not toot"
-        ]
-    },
-    {
-        "In the 1964 movie, what is the name of the Jack in the Box?": [
-            "Charlie",
-            "Sam",
-            "Billy",
-            "Jack"
-        ]
-    },
-    {
-        "In the 1964 movie, why did Santa Claus almost cancel Christmas?": [
-            "Storm",
-            "No snow",
-            "No toys",
-            "The Reindeer were sick"
-        ]
-    },
-    {
-        "In the 1964 movie, what animal noise did the elf make to distract the Bumble?": [
-            "Oink",
-            "Growl",
-            "Bark",
-            "Meow"
-        ]
-    },
-    {
-        "In the 1964 movie, what is the name of the prospector?": [
-            "Yukon Cornelius",
-            "Slider Sam",
-            "Bumble",
-            "Jack"
-        ]
-    },
-    {
-        "How far do reindeer travel when they migrate?": [
-            "3000 miles",
-            "700 miles",
-            "500 miles",
-            "0 miles"
-        ]
-    },
-    {
-        "How fast can a reindeer run?": [
-            "48 miles per hour",
-            "17 miles per hour",
-            "19 miles per hour",
-            "14 miles per hour"
-        ]
+        "Flying fish are actually gliding, but they get great air out of the water. How far can they glide?": [
+            "655 feet",
+            "200 feet",
+            "Half a mile",
+            "304 yards"
+            ]
     }
 ];
 
@@ -385,12 +282,12 @@ function onSessionEnded(sessionEndedRequest, session) {
 
 var ANSWER_COUNT = 4;
 var GAME_LENGTH = 5;
-var CARD_TITLE = "Reindeer Games"; // Be sure to change this for your skill.
+var CARD_TITLE = "ZooTrivia"; // Be sure to change this for your skill.
 
 function getWelcomeResponse(callback) {
     var sessionAttributes = {},
-        speechOutput = "Reindeer Games. I will ask you " + GAME_LENGTH.toString()
-            + " questions, try to get as many right as you can. Just say the number of the answer. Let's begin. ",
+        speechOutput = "Zoo Trivia. I will ask you " + GAME_LENGTH.toString()
+            + " multiple choice questions, try to get as many right as you can. Just say the number of the answer. If you get one wrong, I will make fun of you. Let's begin. ",
         shouldEndSession = false,
 
         gameQuestions = populateGameQuestions(),
@@ -514,18 +411,35 @@ function handleAnswerRequest(intent, session, callback) {
 
         if (answerSlotValid && parseInt(intent.slots.Answer.value) == correctAnswerIndex) {
             currentScore++;
-            speechOutputAnalysis = "correct. ";
+            speechOutputAnalysis = "correct. Good job Sparky. ";
         } else {
+         //****** This is the part that makes my version funny. Or unique. Whatever, I think I'm hilarious
+             var insults = [
+                "You're not very good at this, are you. ",
+                "Your mother was a hamster, and your father smelt of elderberries. ",
+                "I'm sure this means you're very good looking.",
+                "It's okay, it's just a little trivia game. I'm not judging you. ",
+                "Look, trivia isn't for everybody. Maybe you should take up beer pong. ",
+                "Come on, a gorilla wrote that question in sign language. You just got bested by a gorilla. ",
+                "Are you familiar with Alex the parrot? Alex got that question right. Look him up. You'll learn something. ",
+                "Your parents must be so proud of you. ",
+                "I'm not in the business of judging people, but I'm totally judging you right now. ",
+                "Don't quit your day job. ",
+                "Try a little harder next time. ",
+                "That was a tough one. If only you had some kind of device you could ask for help. Oh, wait. ",
+                "It's not that I think you're bad at this. I just think you're kind of not good at this. ",
+                ];
+                var sassypants = insults[Math.floor(Math.random() * insults.length)];
             if (!userGaveUp) {
-                speechOutputAnalysis = "wrong. "
+                speechOutputAnalysis = "wrong. " + sassypants
             }
-            speechOutputAnalysis += "The correct answer is " + correctAnswerIndex + ": " + correctAnswerText + ". ";
+            speechOutputAnalysis += "The correct answer is " + correctAnswerIndex + ": " + correctAnswerText + ". " + sassypants;
         }
         // if currentQuestionIndex is 4, we've reached 5 questions (zero-indexed) and can exit the game session
         if (currentQuestionIndex == GAME_LENGTH - 1) {
             speechOutput = userGaveUp ? "" : "That answer is ";
             speechOutput += speechOutputAnalysis + "You got " + currentScore.toString() + " out of "
-                + GAME_LENGTH.toString() + " questions correct. Thank you for playing!";
+                + GAME_LENGTH.toString() + " questions correct. Nice job Hotshot. Thank you for playing!";
             callback(session.attributes,
                 buildSpeechletResponse(CARD_TITLE, speechOutput, "", true));
         } else {
