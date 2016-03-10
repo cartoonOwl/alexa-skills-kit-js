@@ -1,10 +1,7 @@
 /**
  Copyright 2014-2015 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-
  Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at
-
  http://aws.amazon.com/apache2.0/
-
  or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
  */
 
@@ -172,9 +169,9 @@ exports.handler = function (event, context) {
          * prevent someone else from configuring a skill that sends requests to this function.
          */
 
-//     if (event.session.application.applicationId !== "amzn1.echo-sdk-ams.app.05aecccb3-1461-48fb-a008-822ddrt6b516") {
-//         context.fail("Invalid Application ID");
-//      }
+      if (event.session.application.applicationId !== "amzn1.echo-sdk-ams.app.0722a9d4-39c3-4b6f-bbae-bd4a9041e0f0") {
+           context.fail("Invalid Application ID");
+        }
 
         if (event.session.new) {
             onSessionStarted({requestId: event.request.requestId}, event.session);
@@ -282,7 +279,7 @@ function onSessionEnded(sessionEndedRequest, session) {
 
 var ANSWER_COUNT = 4;
 var GAME_LENGTH = 5;
-var CARD_TITLE = "ZooTrivia"; // Be sure to change this for your skill.
+var CARD_TITLE = "Zoo Trivia"; // Be sure to change this for your skill.
 
 function getWelcomeResponse(callback) {
     var sessionAttributes = {},
@@ -397,7 +394,7 @@ function handleAnswerRequest(intent, session, callback) {
         // If the user provided answer isn't a number > 0 and < ANSWER_COUNT,
         // return an error message to the user. Remember to guide the user into providing correct values.
         var reprompt = session.attributes.speechOutput;
-        var speechOutput = "Your answer must be a number between 1 and " + ANSWER_COUNT + ". " + reprompt;
+        var speechOutput = "Your answer must be a number between 1 and " + ANSWER_COUNT + ". Weren't you listening? " + reprompt;
         callback(session.attributes,
             buildSpeechletResponse(CARD_TITLE, speechOutput, reprompt, false));
     } else {
@@ -411,27 +408,27 @@ function handleAnswerRequest(intent, session, callback) {
 
         if (answerSlotValid && parseInt(intent.slots.Answer.value) == correctAnswerIndex) {
             currentScore++;
-            speechOutputAnalysis = "correct. Good job Sparky. ";
+            speechOutputAnalysis = "correct. Good job, Sparky. ";
         } else {
-         //****** This is the part that makes my version funny. Or unique. Whatever, I think I'm hilarious
-             var insults = [
-                "You're not very good at this, are you. ",
-                "Your mother was a hamster, and your father smelt of elderberries. ",
-                "I'm sure this means you're very good looking.",
-                "It's okay, it's just a little trivia game. I'm not judging you. ",
-                "Look, trivia isn't for everybody. Maybe you should take up beer pong. ",
-                "Come on, a gorilla wrote that question in sign language. You just got bested by a gorilla. ",
-                "Are you familiar with Alex the parrot? Alex got that question right. Look him up. You'll learn something. ",
-                "Your parents must be so proud of you. ",
-                "I'm not in the business of judging people, but I'm totally judging you right now. ",
-                "Don't quit your day job. ",
-                "Try a little harder next time. ",
-                "That was a tough one. If only you had some kind of device you could ask for help. Oh, wait. ",
-                "It's not that I think you're bad at this. I just think you're kind of not good at this. ",
-                ];
-                var sassypants = insults[Math.floor(Math.random() * insults.length)];
+            /* This is my little addition to make it funny.  */
+            var insults = [
+                 "You're not very good at this, are you. ",
+                 "Your mother was a hamster, and your father smelt of elderberries. ",
+                 "I'm sure this means you're very good looking.",
+                 "It's okay, it's just a little trivia game. I'm not judging you. ",
+                 "Look, trivia isn't for everybody. Maybe you should take up beer pong. ",
+                 "Come on, a gorilla wrote that question in sign language. You just got bested by a gorilla. ",
+                 "Are you familiar with Alex the parrot? Alex got that question right. Look him up. You'll learn something. ",
+                 "Your parents must be so proud of you. ",
+                 "I'm not in the business of judging people, but I'm totally judging you right now. ",
+                 "Don't quit your day job. ",
+                 "Try a little harder next time. ",
+                 "That was a tough one. If only you had some kind of device you could ask for help. Oh, wait. ",
+                 "It's not that I think you're bad at this. I just think you're kind of not good at this. ",
+                 ];
+                 var sassypants = insults[Math.floor(Math.random() * insults.length)];
             if (!userGaveUp) {
-                speechOutputAnalysis = "wrong. " + sassypants
+                speechOutputAnalysis = "wrong. " + sassypants;
             }
             speechOutputAnalysis += "The correct answer is " + correctAnswerIndex + ": " + correctAnswerText + ". " + sassypants;
         }
@@ -439,7 +436,7 @@ function handleAnswerRequest(intent, session, callback) {
         if (currentQuestionIndex == GAME_LENGTH - 1) {
             speechOutput = userGaveUp ? "" : "That answer is ";
             speechOutput += speechOutputAnalysis + "You got " + currentScore.toString() + " out of "
-                + GAME_LENGTH.toString() + " questions correct. Nice job Hotshot. Thank you for playing!";
+                + GAME_LENGTH.toString() + " questions correct. Nice Job, Hotshot. Thank you for playing!";
             callback(session.attributes,
                 buildSpeechletResponse(CARD_TITLE, speechOutput, "", true));
         } else {
@@ -563,4 +560,3 @@ function buildResponse(sessionAttributes, speechletResponse) {
         response: speechletResponse
     };
 }
-
